@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;700&family=Nunito:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,700&family=Raleway:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+:root {
+    --bg1-:#171718;
+    --bg2-:#1C1E22;
+    --blanco-:#FFFFFF;
+    --border-:#26292D;
+    --primary-:#5C62EC;
+    --hover-:#3C40AE;
+    --acento-:#85BFD1;
+    --gris:#A0A0A1;
+}
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Nunito',sans-serif;
+}
+
+body {
+    background-color: #171718;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+main {
+    display: flex;
+}
+
+.img-logo {
+    background:url('/images/dash.jpg');
+    width: 40vw;
+    height: 100vh;
+    background-size: cover;
+}
+
+.logo {
+    margin-top: 32%;
+    background-color:#0005;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    background-color: #85BFD1;
+    width: 60vw;
+}
+
+.opening {
+    background-color: var(--bg1-);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 70px 0px 70px 40px;
+    font-size: 20px;
+    gap: 30px;
+}
+
+.opening p {
+    margin: 0;
+}
+
+.opening p:first-of-type {
+    max-width: 80%;
+}
+
+form {
+    background-color: var(--bg2-);
+    padding: 40px;
+    display: grid;
+    grid-template-columns: auto auto;
+    flex-direction: row;
+    gap: 10px;
+}
+
+form legend {
+    grid-column: 1 / span 2;
+    font-size: 20px;
+}
+
+form .input {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.input input {
+    border-radius: 5px;
+    border: 2px solid var(--blanco-);
+    background-color: var(--bg2-);
+    color: var(--primary-);
+    padding: 5px;
+    outline: none;
+}
+
+.input input:focus {
+    border-color:var(--primary-);
+}
+
+.closing {
+    background-color: var(--bg1-);
+    padding: 40px;
+    height: 100%;
+}
+
+.closing button {
+    border: 1px solid var(--primary-);
+    background-color: var(--bg1-);
+    color: var(--primary-);
+    padding: 10px 16px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s all ease-in;
+}
+
+.closing button:hover {
+    cursor: pointer;
+    background-color: var(--primary-);
+    color: var(--bg1-);
+}

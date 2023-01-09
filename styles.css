@@ -27,7 +27,7 @@ main {
 }
 
 .img-logo {
-    background:url('/images/dash.jpg') no-repeat;
+    background:url('images/dash.jpg') no-repeat;
     -webkit-background-size:cover;
     -moz-background-size: cover;
     -o-background-size: cover;

@@ -27,14 +27,17 @@ main {
 }
 
 .img-logo {
-    background:url('/images/dash.jpg');
+    background:url('/images/dash.jpg') no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     width: 40vw;
-    height: 100vh;
+    height: 110vh;
     background-size: cover;
 }
 
 .logo {
-    margin-top: 32%;
+    margin-top: 31%;
     background-color:#0005;
     padding: 10px 0;
     display: flex;
@@ -45,7 +48,6 @@ main {
 .content {
     display: flex;
     flex-direction: column;
-    background-color: #85BFD1;
     width: 60vw;
 }
 
@@ -68,20 +70,24 @@ main {
 }
 
 form {
+    display: flex;
+    flex-direction: column;
+}
+
+.open {
     background-color: var(--bg2-);
     padding: 40px;
     display: grid;
     grid-template-columns: auto auto;
-    flex-direction: row;
     gap: 10px;
 }
 
-form legend {
+.open legend {
     grid-column: 1 / span 2;
     font-size: 20px;
 }
 
-form .input {
+.open .input {
     display: flex;
     flex-flow: column wrap;
 }
@@ -119,4 +125,15 @@ form .input {
     cursor: pointer;
     background-color: var(--primary-);
     color: var(--bg1-);
+}
+
+#login {
+    color: #5C62EC;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#login:hover {
+    text-decoration: underline;
+    transition: 0.3s all ease-out;
 }
